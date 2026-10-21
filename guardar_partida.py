@@ -6,7 +6,6 @@ try:
         host="localhost",
         dbname="pvz_db",
         user="pvz_user",
-        password="pvz123"
     ) as conexion:
 
         with conexion.cursor() as cursor:
