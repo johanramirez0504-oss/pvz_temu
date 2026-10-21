@@ -96,7 +96,7 @@ def pvz(plantas,zombies,jugador_id):
         soles=1500
         back=True
         oleada=1
-        cantidad_zombies=random.randint(6,12)
+        cantidad_zombies=random.randint(6,10)
         conteo=0
         while back:
                 print(f"Oleada: {oleada}")
