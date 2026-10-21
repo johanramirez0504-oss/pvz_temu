@@ -17,6 +17,8 @@ It uses Python for the game logic, FastAPI to provide a REST API, and PostgreSQL
 - **Sound Effects:** Includes audio files to enhance the gaming experience.
 - **REST API:** Register completed games and retrieve player information.
 - **Database Integration:** Store game results and player statistics using PostgreSQL.
+  <img width="1154" height="1161" alt="image" src="https://github.com/user-attachments/assets/e51e2257-4a1d-4967-9970-7050cdc1958d" />
+
 
 ## Technologies
 
