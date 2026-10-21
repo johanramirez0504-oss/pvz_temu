@@ -95,12 +95,10 @@ def pvz(plantas,zombies,jugador_id):
         vida_plantas={}
         soles=1500
         back=True
-        oleada=3
-        cantidad_zombies=random.randint(10,20)
+        oleada=1
+        cantidad_zombies=random.randint(6,12)
         conteo=0
         while back:
-                print(vida_plantas)
-                print(f"Cantidad de zombies: {cantidad_zombies}")
                 print(f"Oleada: {oleada}")
                 ataque_planta(jardin,zombies,plantas,vida_zom,estadisticas,modelos_zombies,vida_plantas,soles,modelos_plantas)
                 derrota=mover_zombies(jardin,vida_zom,vida_plantas,zombies,plantas,soles,modelos_plantas,modelos_zombies)
@@ -171,7 +169,7 @@ def pvz(plantas,zombies,jugador_id):
                 
                 if len(vida_zom)==0 and conteo>=cantidad_zombies:
                     oleada+=1
-                    cantidad_zombies=random.randint(3,5)
+                    cantidad_zombies=random.randint(oleada*4,oleada*5+4)
                    
                     zombies[1]["vida"]+=oleada*10
                     zombies[1]["ataque"]+=oleada*5
